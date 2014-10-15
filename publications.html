@@ -1,94 +1,121 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <div id="header">
-           <img src ="img/NYU-Poly-Campus.jpg"/ width="1277px" height="300px">
-    </div>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
 
-    <body>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-            <nav class="navbar navbar-inverse" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Erwin Lutwak</a>
-        </div>
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Teaching</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="#">Awards & Honors</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        
-          <ul class="nav navbar-nav navbar-right">
-              <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
+    <!--Author CSS-->
+    <link href="css/nav.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        ul{
+            list-style-type: none;
+        }
+
+        .text{
+            text-align: left;
+        }
+
+        #published-work{
+          text-align: left;
+        }
+
+        .intro-section{
+          margin-top: -111px;
+        }
+
+    </style>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">Erwin Lutwak</a>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <!--
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Erwin Lutwak</h1>
-        <img src = "/lutwak.jpg"/>
-        <h4>About me</h4>
-        <p>I am a Professor of Mathematics at Polytechnic Institute Of New York University. Not only do I teach mathematics, I am a researcher as well,
-            with concentrations/specializations in areas such as convex geometry.I believe mathematics plays an important role not only in engineering but it also builds critical thinking skills applicable in many sorts of fields.</p>
-        <p><a class="btn btn-primary btn-lg" role="button" href="#">Learn more »</a></p>
-      </div>
-    </div>
-    -->
 
-  
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse ">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+
+                     <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#awards_honors">Awards & Honors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#miscellaneous">Miscellaneous</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div id="header">
+           <img src ="img/NYU-Poly-Campus.jpg"/ width="100%" height="650px">
+    </div>
+
+    <!-- Intro Section -->
+    <section>
         <div>
+          <div class="heading">
           <h2>Publications</h2>
           <h4>Recently published refereed journal articles</h4>
+          </div>
 
-          <h1><b>2000's</b></h1>
+          <div id="published-work">
+
+            <div class="title-year">
+              <h1><b>2000's</b></h1>
+            </div>
+
           <ul>
             <Li><h4>2014:</h4>
             <ol>
@@ -179,8 +206,10 @@
           </ul>
 
 
-
+          <div class="title-year">
           <h1><b>1990's</b></h1>
+          </div>
+
           <ul>
               <li><h4>1998:</h4>
                 <ol>
@@ -235,7 +264,10 @@
                 </ol>
           </ul>
 
+          <div class="title-year">
           <h1><b>1980's</b></h1>
+          </div>
+
           <ul>
             <li><h4>1989:</h4>
               <ol>
@@ -256,96 +288,91 @@
 
             <li><h4>1986:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">Volume of mixed bodies</a> Transactions of the American Mathematical Society 294 (2), 487-500</li>
+                <li>E Lutwak <a href="#">On some affine isoperimetric inequalities</a>Journal of Differential Geometry 23 (1), 1-13</li>
               </ol>
 
             <li><h4>1985:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">ON THE BLASCHKE‐SANTALÓ INEQUALITY</a> Annals of the New York Academy of Sciences 440 (1), 106-112</li>
+                <li>E Lutwak <a href="#">Mixed projection inequalities</a> Transactions of the American Mathematical Society 287 (1), 91-105</li>
               </ol>
 
             <li><h4>1984:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">On power means of positive quadratic forms</a> Linear algebra and its applications 57, 13-19</li>
+                <li>E Lutwak <a href="#">A general isepiphanic inequality</a> Proceedings of the American Mathematical Society 90 (3), 415-421</li>
               </ol>
 
             <li><h4>1983:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">A width-diameter inequality for convex bodies</a> Journal of Mathematical Analysis and Applications 93 (1), 290-295</li>
               </ol>
 
             <li><h4>1982:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">ON PACKING CURVES INTO CIRCLES</a> Convexity and related combinatorial geometry: proceedings of the second... </li>
               </ol>
 
             <li><h4>1980:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">Isoperimetric inequalities involving bisectors</a> Bulletin of the London Mathematical Society 12 (4), 289-295 </li>
               </ol>
           </ul>
 
+          <div class="title-year">
           <h1><b>1970's</b></h1>
+          </div>
           <ul>
 
             <li><h4>1979:</h4>
             <ol>
-              <li> <a href="#"> </a> </li>
-              <li> <a href="#"> </a> </li>
-              <li> <a href="#"> </a> </li>
+              <li>E Lutwak <a href="#">Mean dual and harmonic cross-sectional measures</a> Annali di Matematica Pura ed Applicata 119 (1), 139-148</li>
+              <li>E Lutwak <a href="#">On a complementary Minkowski inequality</a> Journal of Mathematical Analysis and Applications 72 (1), 70-74</li>
+              <li>E Lutwak <a href="#">On isoperimetric inequalities related to a problem of Moser</a> American Mathematical Monthly, 476-477</li>
             </ol>
 
             <li><h4>1978:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">On the Expected Value of the Euler-Poincaré Characteristic of the Intersection of Two Convex Hypersurfaces</a>Journal of the London Mathematical Society 2 (3), 537-539</li>
               </ol>
 
              <li><h4>1977:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">Mixed width-integrals of convex bodies</a> Israel Journal of Mathematics 28 (3), 249-253</li>
               </ol>
 
                <li><h4>1976:</h4>
               <ol>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
-                <li> <a href="#"> </a> </li>
+                <li>E Lutwak <a href="#">A dual of the isepiphanic inequality</a>Archiv der Mathematik 27 (1), 206-208</li>
+                <li>H Guggenheimer, E Lutwak <a href="#">A characterization of the n-dimensional parallelotope</a>American Mathematical Monthly, 475-478</li>
+                <li>E Lutwak <a href="#">On cross-sectional measures of polar reciprocal convex bodies</a> Geometriae Dedicata 5 (1), 79-80</li>
               </ol>
 
               <li><h4>1975:</h4>
                 <ol>
-                  <li> <a href="#"> </a> </li>
-                  <li> <a href="#"> </a> </li>
-                  <li> <a href="#"> </a> </li>
+                  <li>E Lutwak <a href="#">A general Bieberbach inequality</a> Mathematical Proceedings of the Cambridge Philosophical Society 78 (03), 493-495</li>
+                  <li>E Lutwak <a href="#">Dual mixed volumes</a> Pacific Journal of Mathematics 58 (2), 531-538</li>
+                  <li>E Lutwak <a href="#">Width-integrals of convex bodies</a> Proceedings of the American Mathematical Society 53 (2), 435-439</li>
                 </ol>
           </ul>
         </div>
-      
+        </div>
+    </section>
 
-      <hr>
 
-      <footer>
-        <p>© Company 2014</p>
-      </footer>
-    </div>
-       
-    
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>

@@ -1,124 +1,161 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    </head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!--Author CSS-->
+    <link href="css/nav.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        ul{
+            list-style-type: none;
+        }
+
+        .text{
+            text-align: left;
+        }
+
+
+    </style>
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#intro">Erwin Lutwak</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse ">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+
+                     <li>
+                        <a class="page-scroll" href="#teaching">Teaching</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a class="page-scroll" href="#research">Research</a>
+                    </li>
+                    -->
+                    <li>
+                        <a class="page-scroll" href="#publications">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#awards_honors">Awards & Honors</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#miscellaneous">Miscellaneous</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
     <div id="header">
-           <img src ="img/NYU-Poly-Campus.jpg"/ width="1277px" height="300px">
+           <img src ="img/NYU-Poly-Campus.jpg"/ width="100%" height="650px">
     </div>
 
-    <body>
-
-            <nav class="navbar navbar-inverse" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Erwin Lutwak</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Teaching</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Publications</a></li>
-            <li><a href="#">Awards & Honors</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miscellaneous<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        
-          <ul class="nav navbar-nav navbar-right">
-              <form class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <div class="jumbotron">
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+       <div class="jumbotron" class="intro-section">
       <div class="container">
-        <h1>Erwin Lutwak</h1>
-        <img src = "/lutwak.jpg"/>
+        <h1 class="col-lg-12 text-center">Erwin Lutwak</h1>
+        <img src = "img/lutwak.jpg"/>
         <h4>About me</h4>
         <p>I am a Professor of Mathematics at Polytechnic Institute Of New York University. Not only do I teach mathematics, I am a researcher as well,
             with concentrations/specializations in areas such as convex geometry.I believe mathematics plays an important role not only in engineering but it also builds critical thinking skills applicable in many sorts of fields.</p>
         <p><a class="btn btn-primary btn-lg" role="button" href="#">Learn more »</a></p>
+        <p><a class="btn btn-primary btn-lg" role="button" href="erwinlutwakcv.pdf" target='_blank'>Download CV here »</a></p>
+
       </div>
     </div>
+    </section>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="row-md-4">
-          <h2>Teaching</h2>
-          <h3>Fall 2014:</h3>
+    <!-- About Section -->
+    <section id="teaching" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Teaching Section</h1>
 
+                    <div class="text">
+                    <h3>Fall 2014:</h3>
           <ul>
-            <li><a href="#">Precalculus</a></li>
-            <li><a href="#">Graduated Linear Algebra</a></li>
+            <li><a href="MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
+            <li><a href="MA2012T_TH.pdf" target='_blank'>Graduated Linear Algebra</a></li>
           </ul>
 
           <h2>Previous Semesters</h2>
           <h3>Spring 2013:</h3>
           <ul>
-            <li></li>
-            <li></li>
+            <li><a href="MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
+            <li><a href="MA1024Fall2014.pdf" target='_blank'>Calculus I</a></li>
           </ul>
 
           <h3>Fall 2012:</h3>
           <ul>
-            <li></li>
-            <li></li>
+            <li><a href="MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
+            <li><a href="MA1024Fall2014.pdf" target='_blank'>Calculus I</a></li>
           </ul>
-
-          <a class="btn btn-default" href="#" role="button">View more classes »</a></p>
+                    <!--
+                    <a class="btn btn-default" href="#" role="button">View more details »</a></p>
+                    -->
+                </div>
+            </div>
         </div>
-        <div >
-          <h2>Research</h2>
-          <p>I work with Deane Yang and Gaoyong Zhang on affine and linearly invariant geometric and analytic inequalities. In the past I have worked on overdetermined systems of PDE's and convergence and collapsing theorems for Riemannian manifolds. </p>
-          <p><a class="btn btn-default" href="#" role="button">View past research »</a></p>
-          <p><a class="btn btn-default" href="#" role="button">Download CV Here »</a></p>
-         
-       </div>
-        <div>
-          <h2>Publications</h2>
-          <h4>Recently published refereed journal articles</h4>
-          <ul>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="publications" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   <h1>Publications Section</h1>
+                    <h4>Recently published refereed journal articles</h4>
+                    <ul style="text-align: left;">
             <Li><h4>2014:</h4>
             <ol>
                 <li>A Cianchi, E Lutwak, D Yang, G Zhang <a href"#">A Unified Approach to Cramér–Rao Inequalities</a>, IEE</li>
@@ -138,47 +175,76 @@
 
                     <li>E Lutwak, S Lv, D Yang, G Zhang <a href="#">Extensions of Fisher information and Stam's inequality</a>,Information Theory, IEEE Transactions on 58 (3), 1319-1327</li>
 
-                    <li>E Lutwak, D Yang, G Zhang <a href="#">The Brunn–Minkowski–Firey inequality for nonconvex sets</a>, Advances in Applied Mathematics 48 (2), 407-413</li>
+                    <li>E Lutwak, D Yang, G Zhang <a href="#">The Brunn–Minkowski–Firey inequality for nonconvex sets</a>Advances in Applied Mathematics 48 (2), 407-413</li>
 
 
                 </ol>
           </ul>
 
-          <p><a class="btn btn-default" href="#" role="button">View more publications »</a></p>
-        </div>
-        <div>
-          <h2>Awards & Honors</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-        <div>
-          <h2>Miscellaneous</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
-        </div>
-      </div>
+                    <a class="btn btn-default" href="publications.html" role="button" target='_blank'>View more publications »</a></p>
 
-      <hr>
-
-      <footer>
-        <p>© Company 2014</p>
-      </footer>
-    </div>
-       
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+    <!-- Contact Section -->
+    <section id="awards_honors" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Awards & Honors Section</h1>
+                    <h3>NSF Grants:</h3>
+                    <ol style="text-align: left;">
+                        <li>Isoperimetric Inequalities. DMS-1312181, 2013-2016</li>
+                        <li>Isoperimetric Inequalities. DMS-1007347, 2010-2013</li>
+                        <li>Isoperimetric Inequalities. DMS-0706859, 2007-2010</li>
+                        <li>Isoperimetric Inequalities. DMS-0405707, 2004-2007</li>
+                        <li>Isoperimetric Inequalities. DMS-0104363, 2001-2004</li>
+                        <li>Isoperimetric Inequalities. DMS-9803261, 1998-2001</li>
+                        <li>Isoperimetric Inequalities. DMS-9507988, 1995-1998</li>
+                        <li>Isoperimetric Inequalities. DMS-9123571, 1992-1995</li>
+                        <li>Isoperimetric Inequalities. DMS-8902550, 1989-1992</li>
+                        <li>Isoperimetric Inequalities. DMS-8704474, 1987-1989</li>
+                    </ol>
+                    <ol style="text-align:left;">
+                        <li>PhD(honoris causa) Vienna University of Technology - October 2014</li>
+                        <li>Fellow of the American Mathematical Society, 2012-pres.
+                    </ol>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="miscellaneous" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Miscellaneous Section</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+
+</body>
+
 </html>

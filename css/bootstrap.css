@@ -13,6 +13,7 @@ html {
 body {
   margin: 0;
 }
+
 article,
 aside,
 details,
@@ -1222,6 +1223,12 @@ ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+
+
+ul{
+  list-style-type: none;
 }
 ul ul,
 ol ul,

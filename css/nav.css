@@ -1,0 +1,19 @@
+ul{
+	list-style-type: none;
+}
+.text{
+	text-align: left;
+}
+
+.heading{
+	text-align: center;
+}
+
+#published-work{
+	text-align: left;
+}
+
+.title-year{
+	text-align: center;
+}
+
