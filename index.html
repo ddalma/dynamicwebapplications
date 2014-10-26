@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Scrolling Nav - Start Bootstrap Template</title>
+    <title>Erwin Lutwak Portfolio Website</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -31,14 +31,32 @@
 
     <style>
 
+
         ul{
             list-style-type: none;
         }
 
         .text{
             text-align: left;
+            line-height: 45px;
         }
 
+        .intro-section{
+            padding-top: 10px;
+        }
+
+        .blurb{
+            font-size: 18px;
+            font-family: Classes;
+        }
+        .class-listings{
+            font-size: 20px;
+        }
+
+        .grants{
+            font-family: classes;
+            font-size: 16px;
+        }
 
     </style>
 
@@ -49,7 +67,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top navbar-fixed-top navbar-inverse" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -94,20 +112,20 @@
         <!-- /.container -->
     </nav>
     <div id="header">
-           <img src ="img/NYU-Poly-Campus.jpg"/ width="100%" height="650px">
+          <img src ="img/NYU-Poly-Campus.jpg"/ width="100%" height="650px"> 
     </div>
 
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-       <div class="jumbotron" class="intro-section">
+       <div class="jumbotron" class="intro-section" style="padding-top: 10px;">
       <div class="container">
         <h1 class="col-lg-12 text-center">Erwin Lutwak</h1>
-        <img src = "img/lutwak.jpg"/>
+        <img src = "img/profile.jpg" align="middle" class="img-circle"/>
         <h4>About me</h4>
         <p>I am a Professor of Mathematics at Polytechnic Institute Of New York University. Not only do I teach mathematics, I am a researcher as well,
             with concentrations/specializations in areas such as convex geometry.I believe mathematics plays an important role not only in engineering but it also builds critical thinking skills applicable in many sorts of fields.</p>
-        <p><a class="btn btn-primary btn-lg" role="button" href="#">Learn more »</a></p>
-        <p><a class="btn btn-primary btn-lg" role="button" href="erwinlutwakcv.pdf" target='_blank'>Download CV here »</a></p>
+       <!-- <p><a class="btn btn-primary btn-lg" role="button" href="#">Learn more »</a></p> -->
+        <p><a class="btn btn-primary btn-lg" role="button" href="PDF/erwinlutwakcv.pdf" target='_blank'>Download CV here »</a></p>
 
       </div>
     </div>
@@ -121,27 +139,16 @@
                     <h1>Teaching Section</h1>
 
                     <div class="text">
-                    <h3>Fall 2014:</h3>
-          <ul>
-            <li><a href="MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
-            <li><a href="MA2012T_TH.pdf" target='_blank'>Graduated Linear Algebra</a></li>
-          </ul>
-
-          <h2>Previous Semesters</h2>
-          <h3>Spring 2013:</h3>
-          <ul>
-            <li><a href="MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
-            <li><a href="MA1024Fall2014.pdf" target='_blank'>Calculus I</a></li>
-          </ul>
-
-          <h3>Fall 2012:</h3>
-          <ul>
-            <li><a href="MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
-            <li><a href="MA1024Fall2014.pdf" target='_blank'>Calculus I</a></li>
-          </ul>
-                    <!--
-                    <a class="btn btn-default" href="#" role="button">View more details »</a></p>
-                    -->
+                        <h2>Classes Taught</h2>
+                          <ul class="class-listings">
+                            <li><a href="PDF/MA914Fall2014A&F.pdf" target='_blank'>Precalculus</a></li>
+                            <li><a href="PDF/MA2012T_TH.pdf" target='_blank'>Graduated Linear Algebra</a></li>
+                            <li><a href="PDF/MA1024Fall2014.pdf" target='_blank'>Calculus I</a></li>
+                            <li><a href="#" target'_blank'>Reading Course in Mathematics</a></li>
+                          </ul>
+                    </div>
+                    <p class="blurb">To set up a reading course with Professor Erwin Lutwak, please send an email here:</p>
+                    <a class="btn btn-default" href="mailto:lutwak@nyu.edu?Subject=Reading%20Course" role="button">Prof. Lutwak Email »</a></p>
                 </div>
             </div>
         </div>
@@ -197,24 +204,26 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Awards & Honors Section</h1>
-                    <h3>NSF Grants:</h3>
-                    <ol style="text-align: left;">
-                        <li>Isoperimetric Inequalities. DMS-1312181, 2013-2016</li>
-                        <li>Isoperimetric Inequalities. DMS-1007347, 2010-2013</li>
-                        <li>Isoperimetric Inequalities. DMS-0706859, 2007-2010</li>
-                        <li>Isoperimetric Inequalities. DMS-0405707, 2004-2007</li>
-                        <li>Isoperimetric Inequalities. DMS-0104363, 2001-2004</li>
-                        <li>Isoperimetric Inequalities. DMS-9803261, 1998-2001</li>
-                        <li>Isoperimetric Inequalities. DMS-9507988, 1995-1998</li>
-                        <li>Isoperimetric Inequalities. DMS-9123571, 1992-1995</li>
-                        <li>Isoperimetric Inequalities. DMS-8902550, 1989-1992</li>
-                        <li>Isoperimetric Inequalities. DMS-8704474, 1987-1989</li>
-                    </ol>
-                    <ol style="text-align:left;">
-                        <li>PhD(honoris causa) Vienna University of Technology - October 2014</li>
-                        <li>Fellow of the American Mathematical Society, 2012-pres.
-                    </ol>
-
+                    <div class="grants">
+                        <h3>NSF Grants:</h3>
+                        <ol style="text-align: left;">
+                            <li>Isoperimetric Inequalities. DMS-1312181, 2013-2016</li>
+                            <li>Isoperimetric Inequalities. DMS-1007347, 2010-2013</li>
+                            <li>Isoperimetric Inequalities. DMS-0706859, 2007-2010</li>
+                            <li>Isoperimetric Inequalities. DMS-0405707, 2004-2007</li>
+                            <li>Isoperimetric Inequalities. DMS-0104363, 2001-2004</li>
+                            <li>Isoperimetric Inequalities. DMS-9803261, 1998-2001</li>
+                            <li>Isoperimetric Inequalities. DMS-9507988, 1995-1998</li>
+                            <li>Isoperimetric Inequalities. DMS-9123571, 1992-1995</li>
+                            <li>Isoperimetric Inequalities. DMS-8902550, 1989-1992</li>
+                            <li>Isoperimetric Inequalities. DMS-8704474, 1987-1989</li>
+                        </ol>
+                        <h3>Other Awards:</h3>
+                        <ol style="text-align:left;">
+                            <li>PhD(honoris causa) Vienna University of Technology - October 2014</li>
+                            <li>Fellow of the American Mathematical Society, 2012-pres.
+                        </ol>
+                    </div>
 
                 </div>
             </div>
